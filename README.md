@@ -159,6 +159,8 @@ Immediately we can do stuff
 ```
 singularity run docker://godlovedc/lolcow
 
+git clone https://github.com/kahst/BirdNET.git
+cd BirdNET
 singularity pull docker://breallis/birdnet:cpu
 singularity run birdnet_cpu.sif --i Soundscape_1.wav
 singularity shell birdnet_cpu.sif
