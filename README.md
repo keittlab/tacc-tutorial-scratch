@@ -144,7 +144,30 @@ So, let's abstract everything into containers!
 
 # CONTAINERS
 
+We first need to enter an interactive session, then load the singularity module
 
+```
+idev -m 40
+module spider singularity
+module load tacc-singularity
+module list
+singularity help
+```
+
+Immediately we can do stuff
+
+```
+singularity run docker://godlovedc/lolcow
+
+singularity pull docker://breallis/birdnet:cpu
+singularity run birdnet_cpu.sif --i Soundscape_1.wav
+singularity shell birdnet_cpu.sif
+pip list
+python which
+
+```
+
+Still within Singularity, look around your filesystem. Everything should be as normal
 
 
 
